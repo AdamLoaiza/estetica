@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Estética</title>
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<ul class="nav nav-pills">
+		  <li class="nav-item">
+		    <a class="nav-link" href="estetica.html">Registrar Servicio</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="mostrarServicios.php">Mostrar Servicios</a>
+		  </li>
+		</ul>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<form method="POST" action="registrar.php">
+			  	<div class="form-group">
+			  		<label for="">Nombre del servicio:</label>
+			  		<select name="servicio" class="form-control">
+			  			<option value="0">Selecciona servicio</option>
+			  			<option value="Corte">Corte de cabello</option>
+			  			<option value="Tinte">Tinte de cabello</option>
+			  			<option value="Corte de barba">Corte de barba</option>
+			  			<option value="planchado de cabello">Planchado de cabello</option>
+			  		</select>
+			  	</div>
+			  	<div class="form-group">
+			  		<label for="">Duración del servicio en horas:</label>
+			  		<input type="number" placeholder="Teclea el numero de horas" name="horas" class="form-control">
+			  	</div>
+			  	<div class="form-group">
+					<label for="">Fecha de la cita:</label>
+					<input type="date" class="form-control" name="fecha">
+			  	</div>
+			  	<div class="form-group">
+			  		<label for="">Tipo pago:</label><br>
+			  		<input type="radio" class="" name="pago" value="0"> Tarjeta
+			  		<input type="radio" class="" name="pago" value="1"> Efectivo
+			  	</div>
+			  	<div class="text-center">
+			  		<input type="submit" value="Guardar" class="btn btn-primary">
+			  	</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
